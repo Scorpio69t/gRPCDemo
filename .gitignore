@@ -30,3 +30,9 @@
 *.exe
 *.out
 *.app
+.vscode/
+.idea/
+build/
+.DS_Store
+cmake-build-debug/
+cmake-build-release/

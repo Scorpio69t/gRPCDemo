@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package dataTransfer;
+
+message DataChunk {
+  int64 length = 1;
+  bytes data = 2;
+}
+
+message Reply {
+  int64 length = 1;
+}
+
+service DataTransfer {
+  rpc SendData(stream DataChunk) returns (Reply) {}
+}
